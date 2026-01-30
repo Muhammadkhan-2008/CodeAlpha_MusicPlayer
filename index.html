@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyWave Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <h1>MelodyWave</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-compass"></i>
+                        <span>Explore</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-music"></i>
+                        <span>Library</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-heart"></i>
+                        <span>Favorites</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-download"></i>
+                        <span>Downloads</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-history"></i>
+                        <span>Recent</span>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="playlists">
+                <h3>Your Playlists</h3>
+                <ul>
+                    <li><i class="fas fa-list-music"></i> <span>Chill Vibes</span></li>
+                    <li><i class="fas fa-list-music"></i> <span>Workout Mix</span></li>
+                    <li><i class="fas fa-list-music"></i> <span>Study Focus</span></li>
+                    <li><i class="fas fa-list-music"></i> <span>Road Trip</span></li>
+                    <li class="create-playlist">
+                        <i class="fas fa-plus-circle"></i> <span>Create Playlist</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="user-section">
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Guest User</span>
+                    <span class="user-status">Free Plan</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search songs, artists, albums">
+                </div>
+                <div class="user-actions">
+                    <button class="btn-upgrade">
+                        <i class="fas fa-crown"></i>
+                        Upgrade to Premium
+                    </button>
+                    <button class="btn-settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <button class="btn-notifications">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <div class="section-header">
+                    <h2>Your Library</h2>
+                    <div class="view-controls">
+                        <button class="view-btn active"><i class="fas fa-th-large"></i></button>
+                        <button class="view-btn"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="library-filters">
+                    <button class="filter-btn active">All Music</button>
+                    <button class="filter-btn">Recently Added</button>
+                    <button class="filter-btn">Most Played</button>
+                    <button class="filter-btn">Artists</button>
+                    <button class="filter-btn">Albums</button>
+                </div>
+
+                <div class="music-grid">
+                    <div class="library-section">
+                        <h3><i class="fas fa-users"></i> Artists</h3>
+                        <div class="artist-list">
+                            <div class="artist-item">
+                                <div class="artist-avatar">A</div>
+                                <div class="artist-info">
+                                    <h4>AH Creation</h4>
+                                    <p>1 song</p>
+                                </div>
+                            </div>
+                            <div class="artist-item">
+                                <div class="artist-avatar">C</div>
+                                <div class="artist-info">
+                                    <h4>Cute Voice Effects</h4>
+                                    <p>52 songs</p>
+                                </div>
+                            </div>
+                            <div class="artist-item">
+                                <div class="artist-avatar">F</div>
+                                <div class="artist-info">
+                                    <h4>Female Voice Effect</h4>
+                                    <p>7 songs</p>
+                                </div>
+                            </div>
+                            <div class="artist-item">
+                                <div class="artist-avatar">U</div>
+                                <div class="artist-info">
+                                    <h4>Unknown Artist</h4>
+                                    <p>51 songs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="library-section">
+                        <h3><i class="fas fa-compact-disc"></i> Albums</h3>
+                        <div class="album-list">
+                            <div class="album-item">
+                                <div class="album-cover">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <div class="album-info">
+                                    <h4>Unknown Album</h4>
+                                    <p>Unknown Artist • 51 songs</p>
+                                </div>
+                            </div>
+                            <div class="album-item">
+                                <div class="album-cover">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="album-info">
+                                    <h4>Voice Recordings</h4>
+                                    <p>Various Artists • 12 songs</p>
+                                </div>
+                            </div>
+                            <div class="album-item">
+                                <div class="album-cover">
+                                    <i class="fas fa-headphones"></i>
+                                </div>
+                                <div class="album-info">
+                                    <h4>SoundRecorder</h4>
+                                    <p>Unknown Artist • 8 songs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="songs-section">
+                    <div class="songs-header">
+                        <h3><i class="fas fa-play-circle"></i> All Songs</h3>
+                        <button class="shuffle-btn">
+                            <i class="fas fa-random"></i>
+                            Shuffle All
+                        </button>
+                    </div>
+                    
+                    <div class="songs-list">
+                        <!-- Songs will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Player Bar -->
+        <div class="player-bar">
+            <div class="now-playing">
+                <div class="current-song-info">
+                    <div class="current-album-art">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="current-song-details">
+                        <h4 id="currentSongTitle">Select a song</h4>
+                        <p id="currentSongArtist">-</p>
+                    </div>
+                    <button class="btn-like">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button class="control-btn" id="shuffleBtn" title="Shuffle">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button class="control-btn" id="prevBtn" title="Previous">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="control-btn play-btn" id="playPauseBtn" title="Play">
+                        <i class="fas fa-play" id="playIcon"></i>
+                    </button>
+                    <button class="control-btn" id="nextBtn" title="Next">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button class="control-btn" id="repeatBtn" title="Repeat">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+                
+                <div class="progress-section">
+                    <span id="currentTime">0:00</span>
+                    <div class="progress-container" id="progressContainer">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <span id="songDuration">0:00</span>
+                </div>
+            </div>
+
+            <div class="player-options">
+                <button class="option-btn" id="queueBtn" title="Queue">
+                    <i class="fas fa-list-ol"></i>
+                </button>
+                <button class="option-btn" id="lyricsBtn" title="Lyrics">
+                    <i class="fas fa-scroll"></i>
+                </button>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up" id="volumeIcon"></i>
+                    <input type="range" min="0" max="100" value="70" class="volume-slider" id="volumeSlider">
+                </div>
+                <button class="option-btn" id="fullscreenBtn" title="Fullscreen">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Audio Element -->
+        <audio id="audioPlayer" preload="metadata"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
